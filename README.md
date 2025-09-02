@@ -9,11 +9,17 @@
    
    4-Creation interface Thinker
    
-#Repartition des tâches
+#Repartition des tâches²
+
  Tâche 1:
+ 
     Telechargement dataset et prétraitement
     
 Tâche 2:
-    Implémentation du modèle et amélioration
+
+  Implémentation du modèle et amélioration²
+    
 Tâche 3:
+
     Interfac GUI et sauvegarde
+    
