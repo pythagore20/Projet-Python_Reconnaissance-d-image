@@ -16,7 +16,7 @@
     Telechargement dataset et prétraitement
     
 Tâche 2:
-
+  
    Implémentation du modèle et amélioration
     
 Tâche 3:
