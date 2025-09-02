@@ -17,7 +17,7 @@
     
 Tâche 2:
 
-  Implémentation du modèle et amélioration²
+  Implémentation du modèle et amélioration
     
 Tâche 3:
 
