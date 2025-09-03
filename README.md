@@ -1,30 +1,5 @@
-# Projet-Python__classification_d'images 
 
-
-   1-Structure du projet
-   
-   2-Telechargement dataset et Prétraitement
-   
-   3-Implémentation CNN
-   
-   4-Creation interface Thinker
-   
-#Repartition des tâches
-
- Tâche 1:
- 
-    Telechargement dataset et prétraitement
-    
-Tâche 2:
-  
-    Implémentation du modèle et amélioration
-    
-Tâche 3:
-
-    Interfac GUI et sauvegarde
-    
-
-# 🖼️ Projet Python – Classification d'images (Chats vs Chiens) 🐱🐶  
+# 🖼 Projet Python – Classification d'images 
 
 ## 📂 Structure du projet  
 
@@ -35,7 +10,7 @@ Tâche 3:
 
 ---
 
-## 👥 Répartition des tâches  
+##  Répartition des tâches  
 
 - **Tâche 1 :**  
   Téléchargement du dataset et prétraitement  
@@ -44,30 +19,28 @@ Tâche 3:
   Implémentation du modèle et amélioration  
 
 - **Tâche 3 :**  
-  Développement de l’interface graphique (GUI) et sauvegarde du modèle  
+  Développement de l’interface graphique  et sauvegarde du modèle  
 
 ---
 
-## 🚀 Objectif du projet  
+##  Objectif du projet  
 
 L’objectif de ce projet est de développer une application de **reconnaissance d’images** permettant de classer des photos de **chats** et de **chiens**.  
 
-Le modèle est basé sur un **réseau de neurones convolutif (CNN)** et sera intégré dans une **interface graphique Tkinter** pour une utilisation simple et intuitive.  
+C'est un modèle de  **réseau de neurones convolutif** et sera intégré dans une **interface graphique Tkinter**.  
 
 ---
 
-## 🛠️ Technologies utilisées  
+## Les outils utilisés  
 
-- Python 🐍  
+- Python
+- PIL 
 - TensorFlow / Keras  
-- NumPy, Pandas  
-- Matplotlib, Seaborn  
-- Tkinter (pour l’interface utilisateur)  
-- Git & GitHub (gestion de version)  
+- Tkinter (pour l’interface utilisateur)   
 
 ---
 
-## 📌 Étapes principales  
+##  Étapes principales  
 
 ✔️ Prétraitement et nettoyage du dataset  
 ✔️ Construction et entraînement du modèle CNN  
@@ -76,4 +49,4 @@ Le modèle est basé sur un **réseau de neurones convolutif (CNN)** et sera int
 
 ---
 
-✍️ **Auteurs :** Équipe Projet IA – 2025
+✍️ **Auteurs :** Abdoul-Idrissa-Rafic
