@@ -2,7 +2,7 @@
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-def creation_generators(train_dir, validation_dir, target_size=(64,4), batch_size=16, class_mode='binary', augment=True):
+def creation_generators(train_dir, validation_dir, target_size=(180,180), batch_size=32, class_mode='binary', augment=True):
     
     if augment:
         train_datagen = ImageDataGenerator(
@@ -44,28 +44,28 @@ def creation_generators(train_dir, validation_dir, target_size=(64,4), batch_siz
 
 
 
-def model_cnn(input_shape=(128,128,3), dense_units=256, dropout_rate=0.4):
-    
+def model_cnn(input_shape=(180,180,3), dense_units=512, dropout_rate=0.5):
     model = tf.keras.models.Sequential([
         tf.keras.layers.Conv2D(32, (3,3), activation='relu', input_shape=input_shape),
+        tf.keras.layers.BatchNormalization(),
         tf.keras.layers.MaxPooling2D((2,2)),
-        
+
         tf.keras.layers.Conv2D(64, (3,3), activation='relu'),
+        tf.keras.layers.BatchNormalization(),
         tf.keras.layers.MaxPooling2D((2,2)),
-        
+
         tf.keras.layers.Conv2D(128, (3,3), activation='relu'),
+        tf.keras.layers.BatchNormalization(),
         tf.keras.layers.MaxPooling2D((2,2)),
-        
-        tf.keras.layers.Conv2D(128, (3,3), activation='relu'),
-        tf.keras.layers.MaxPooling2D((2,2)),
-        
+
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dropout(dropout_rate),
         tf.keras.layers.Dense(dense_units, activation='relu'),
+        tf.keras.layers.BatchNormalization(),
         tf.keras.layers.Dense(1, activation='sigmoid')
     ])
-    
     return model
+
 
 
 

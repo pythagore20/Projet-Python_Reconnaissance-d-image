@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras.preprocessing import image
 
-def predict_img(model, train_generator, train, target_size=(150,150)):
+def predict_img(model, train_generator, train, target_size=(180,180)):
 
     doss_choix = np.random.choice(os.listdir(train))
     img_nom = np.random.choice(os.listdir(os.path.join(train, doss_choix)))
