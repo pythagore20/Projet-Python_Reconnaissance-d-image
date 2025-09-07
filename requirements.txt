@@ -1,0 +1,15 @@
+# Dépendances pour l'interface graphique et l'intégration
+tensorflow>=2.10.0
+pillow>=9.0.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+
+# Interface graphique (tkinter est inclus avec Python)
+# Pas besoin d'installer tkinter séparément
+
+# Pour le preprocessing d'images
+opencv-python>=4.5.0
+
+# Optionnel : pour des graphiques avancés
+seaborn>=0.11.0
+scikit-learn>=1.0.0
